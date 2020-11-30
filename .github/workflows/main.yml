@@ -20,7 +20,7 @@ jobs:
         
   mytestingafter:
     runs-on: ubuntu-latest
-
+    needs: [mytesting]
     steps:
       - name: print Hello World
         run: echo "Doing my testing after"
